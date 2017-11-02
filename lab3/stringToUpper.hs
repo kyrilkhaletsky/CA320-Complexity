@@ -1,3 +1,4 @@
 import Data.Char(toUpper)
 stringToUpper :: String -> String
-stringToUpper = map toUpper
+stringToUpper [] = []
+stringToUpper (x:xs) = (toUpper x):stringToUpper xs
